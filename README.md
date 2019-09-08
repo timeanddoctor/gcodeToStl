@@ -16,7 +16,11 @@ about some distribution of solids that the `.gcode` file could produce.
 printer.
 
 ## Todo
-Create parsers for both filetypes.
+Visualizations of parsed data as a sanity check.
+For .stl, this would be as simple as using a package like
+pyvista.
+For .gcode, we could use matplotlib to visualize the
+lines followed by the printer in a 3D plot.
 
 ## Formats
 
