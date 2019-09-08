@@ -17,3 +17,31 @@ printer.
 
 ## Todo
 Create parsers for both filetypes.
+
+## Formats
+
+### STL
+A list of triangular facets which are all defined by 3 points, as well
+as the normal unit vector pointing outwards from the face. Used to define the inner
+and outer side of a solid.
+
+### GCODE
+A language of instructions specific to CAM and specifically 3D printing.
+The most common commands, and the ones we will be concerned with, are listed
+below.
+
+#### Instructions
+`G0` - instruction to move to a certain coordinate 
+`G1` - instruction to print at a certain coordinate
+#### Parameters
+These parameters can be passed to different commands
+`F` - Update the feedrate (speed), in mm/min
+`E` - lay down some amount of filament
+
+Here's a [good comprehensive guide](http://marlinfw.org/docs/gcode/G000-G001.html) of gcode.
+
+## Dependencies
+numpy - `pip install numpy`
+meshio - `pip install meshio`
+pandas - `pip install pandas`
+matplotlib - `pip install matplotlib`
