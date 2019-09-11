@@ -34,7 +34,7 @@ def parse_gcode(obj_name):
     keys = [d[0] for d in data]
     for k, key in enumerate(keys):
       if key in m.keys():
-        m[key] = data[k][1:]
+        m[key] = float(data[k][1:])
     if m["X"] is None and m["Y"] is None:
       # skip this item
       pass
