@@ -1,9 +1,6 @@
 # GCode to STL
-The goal of this code is to come up with a function that returns an `.stl` file
-as a function of an input `.gcode` file.  The hope for this is that we can create
-a reliable way of assessing the output of a specific piece of `.gcode` as produced
-by Cura or our own software down the line. This would be valuable for producing synthetic
-data for machine learning algorithms.
+The goal of this is to recreate the geometry from a '.gcode' file in blender as a plugin. 
+
 
 We are using `.gcode` because it is the final step of instructions passed to the printer.
 A `.gcode` file has all of the settings of a slicing software (in our case, Cura) baked
